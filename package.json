@@ -23,7 +23,15 @@
     "banner"
   ],
   "license": "MIT",
-  "author": "",
+  "author": "Mark Wayne Menorca",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marcuwynu23/vite-plugin-env-banner.git"
+  },
+  "homepage": "https://github.com/marcuwynu23/vite-plugin-env-banner",
+  "bugs": {
+    "url": "https://github.com/marcuwynu23/vite-plugin-env-banner/issues"
+  },
   "publishConfig": {
     "access": "public"
   },
