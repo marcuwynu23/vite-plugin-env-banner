@@ -3,13 +3,17 @@
   "version": "0.1.0",
   "description": "A Vite plugin that injects a draggable environment banner in non-production environments.",
   "type": "module",
-  "main": "index.ts",
-  "types": "index.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "exports": {
-    ".": "./index.ts"
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
   },
   "files": [
-    "index.ts",
+    "dist",
     "README.md"
   ],
   "keywords": [
@@ -20,6 +24,9 @@
   ],
   "license": "MIT",
   "author": "",
+  "publishConfig": {
+    "access": "public"
+  },
   "peerDependencies": {
     "vite": "^5.0.0 || ^6.0.0"
   },
@@ -29,6 +36,8 @@
     "vite": "^6.2.0"
   },
   "scripts": {
-    "typecheck": "tsc --noEmit"
+    "build": "tsc index.ts --outDir dist --declaration --module NodeNext --moduleResolution NodeNext --target ES2020 --skipLibCheck",
+    "typecheck": "tsc index.ts --noEmit --module NodeNext --moduleResolution NodeNext --target ES2020 --skipLibCheck",
+    "prepare": "npm run build"
   }
 }
