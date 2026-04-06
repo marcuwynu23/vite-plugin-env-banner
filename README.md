@@ -1,6 +1,15 @@
-# @marcuwynu23/vite-plugin-env-banner
+<p align="center">
+  <img
+    src="https://capsule-render.vercel.app/api?type=waving&height=180&text=vite-plugin-env-banner&fontAlign=50&fontAlignY=35&color=0:2563eb,100:f97316&fontColor=ffffff"
+    alt="@marcuwynu23/vite-plugin-env-banner banner"
+  />
+</p>
 
-A lightweight Vite plugin that injects a floating, draggable environment badge into your app so non-production builds are always clearly visible.
+<h1 align="center">@marcuwynu23/vite-plugin-env-banner</h1>
+
+<p align="center">
+  A Vite plugin that shows a floating environment badge to help developers identify the current app environment.
+</p>
 
 The banner is intentionally disabled when the resolved environment is `production`.
 
