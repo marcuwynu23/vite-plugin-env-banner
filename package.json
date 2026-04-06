@@ -1,7 +1,7 @@
 {
   "name": "@marcuwynu23/vite-plugin-env-banner",
-  "version": "0.1.0",
-  "description": "A Vite plugin that injects a draggable environment banner in non-production environments.",
+  "version": "1.0.0",
+  "description": "A Vite plugin that shows a floating environment badge to help developers identify the current app environment.",
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
