@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+example-react/node_modules/
+
+# Build output
+dist/
+example-react/dist/
+
+# Environment files
+.env
+.env.*
+!.env.example
+example-react/.env
+example-react/.env.*
+!example-react/.env.example
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# TypeScript
+*.tsbuildinfo
+
+# IDE/editor
+.idea/
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
