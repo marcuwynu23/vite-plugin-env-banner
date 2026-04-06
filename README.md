@@ -40,6 +40,17 @@ export default defineConfig({
 });
 ```
 
+JavaScript config is also supported:
+
+```js
+import { defineConfig } from "vite";
+import envBanner from "@marcuwynu23/vite-plugin-env-banner";
+
+export default defineConfig({
+  plugins: [envBanner()],
+});
+```
+
 ## Configuration
 
 ```ts
