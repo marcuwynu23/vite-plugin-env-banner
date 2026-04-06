@@ -1,14 +1,25 @@
-<p align="center">
-  <img
-    src="https://capsule-render.vercel.app/api?type=waving&height=180&text=vite-plugin-env-banner&fontAlign=50&fontAlignY=35&color=0:2563eb,100:f97316&fontColor=ffffff"
-    alt="@marcuwynu23/vite-plugin-env-banner banner"
-  />
-</p>
-
 <h1 align="center">@marcuwynu23/vite-plugin-env-banner</h1>
 
 <p align="center">
   A Vite plugin that shows a floating environment badge to help developers identify the current app environment.
+</p>
+
+<p align="center">
+  <a href="https://www.npmjs.com/package/@marcuwynu23/vite-plugin-env-banner">
+    <img alt="npm version" src="https://img.shields.io/npm/v/@marcuwynu23/vite-plugin-env-banner?color=cb3837&logo=npm">
+  </a>
+  <a href="https://www.npmjs.com/package/@marcuwynu23/vite-plugin-env-banner">
+    <img alt="npm downloads" src="https://img.shields.io/npm/dm/@marcuwynu23/vite-plugin-env-banner?color=blue">
+  </a>
+  <a href="https://github.com/marcuwynu23/vite-plugin-env-banner/blob/main/LICENSE">
+    <img alt="license" src="https://img.shields.io/npm/l/@marcuwynu23/vite-plugin-env-banner?color=brightgreen">
+  </a>
+  <a href="https://github.com/marcuwynu23/vite-plugin-env-banner/actions/workflows/ci.yml">
+    <img alt="CI" src="https://img.shields.io/github/actions/workflow/status/marcuwynu23/vite-plugin-env-banner/ci.yml?branch=main&label=CI">
+  </a>
+  <a href="https://github.com/marcuwynu23/vite-plugin-env-banner/actions/workflows/npm-publisher.yml">
+    <img alt="npm publish workflow" src="https://img.shields.io/github/actions/workflow/status/marcuwynu23/vite-plugin-env-banner/npm-publisher.yml?label=publish">
+  </a>
 </p>
 
 The banner is intentionally disabled when the resolved environment is `production`.
@@ -41,7 +52,7 @@ npm install @marcuwynu23/vite-plugin-env-banner
 ## Quick Start
 
 ```ts
-import { defineConfig } from "vite";
+import {defineConfig} from "vite";
 import envBanner from "@marcuwynu23/vite-plugin-env-banner";
 
 export default defineConfig({
@@ -52,13 +63,23 @@ export default defineConfig({
 JavaScript config is also supported:
 
 ```js
-import { defineConfig } from "vite";
+import {defineConfig} from "vite";
 import envBanner from "@marcuwynu23/vite-plugin-env-banner";
 
 export default defineConfig({
   plugins: [envBanner()],
 });
 ```
+
+<!-- ## Demo Video
+
+<p align="center">
+  <video src="./docs/demo.mp4" controls width="900">
+    Your browser does not support the video tag.
+  </video>
+</p>
+
+If the player does not render on your platform, open the video directly: `./docs/demo.mp4`. -->
 
 ## Configuration
 
@@ -71,10 +92,10 @@ envBanner({
 
 ### Options
 
-| Option | Type | Required | Description |
-| --- | --- | --- | --- |
-| `env` | `string` | No | Hard override for the environment value (`production`, `staging`, etc.). |
-| `envfile` | `string` | No | Path to a specific env file to read `VITE_APP_ENV` from. Relative paths resolve from Vite root. |
+| Option    | Type     | Required | Description                                                                                     |
+| --------- | -------- | -------- | ----------------------------------------------------------------------------------------------- |
+| `env`     | `string` | No       | Hard override for the environment value (`production`, `staging`, etc.).                        |
+| `envfile` | `string` | No       | Path to a specific env file to read `VITE_APP_ENV` from. Relative paths resolve from Vite root. |
 
 ### Resolution precedence
 
