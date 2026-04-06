@@ -30,3 +30,7 @@ pnpm-debug.log*
 # OS files
 .DS_Store
 Thumbs.db
+
+
+# github action secrets
+.secrets
